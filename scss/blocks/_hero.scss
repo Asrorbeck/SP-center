@@ -1,0 +1,81 @@
+.hero {
+    background-color: #25262D;
+    .hero__container {
+        top: 0;
+        max-width: 980px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+        margin-right: 250px;
+        .hero__top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            .hero__t-left {
+                display: flex;
+                align-items: center;
+                .hero__t-link {
+                    padding: 18px;
+                    background-color: #5885EA;
+                    margin-right: 40px;
+                    border-radius: 50%;
+                    text-decoration: none;
+                    background-image: url('./../img/back.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 16px;
+                }
+                .hero__t-heading {
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 38px;
+                    color: #FFFFFF;
+                }
+            }
+            
+            .hero__form {
+                display: flex;
+                .hero__label {
+                    max-width: 675px;
+                    display: flex;
+                    align-items: center;
+                    // width: 100%;
+                    .hero__search {
+                        max-width: 440px;
+                        width: 100%;
+                        padding: 9px 18px;
+                        font-family: 'Roboto';
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 22px;
+                        outline: none;
+                        border: none;
+                        color: #000;
+                        border-radius: 5px;
+                        margin-right: 15px;
+                    }
+                    .hero__btn {
+                        padding: 9px 40px;
+                        background-color: #5885EA;
+                        color: #FFFFFF;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 22px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
