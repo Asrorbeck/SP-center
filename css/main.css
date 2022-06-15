@@ -824,7 +824,7 @@ a {
 }
 
 .about .about__container .about__file {
-  padding: 8px 16px;
+  padding: 8px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,6 +1139,19 @@ a {
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 350px) {
+  .about .about__container {
+    padding: 10px;
+  }
+  .about .about__container .about__heading {
+    font-size: 20px;
+  }
+  .about .about__container .about__file {
+    padding: 5px 7px;
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
