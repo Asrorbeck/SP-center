@@ -2,6 +2,10 @@
     margin-top: 20px;
     margin-right: 250px;
     .about__container{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
         .about__heading {
             font-family: 'Roboto';
             font-weight: 500;
@@ -60,6 +64,9 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #25262D;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
             
@@ -85,6 +92,9 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #25262D;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -114,12 +124,15 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #25262D;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
             .about__time {
                 display: flex;
                 align-items: center;
-                max-width: 300px;
+                max-width: 400px;
                 width: 100%;
                 .time {
                     width: 40px;
@@ -137,6 +150,9 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #25262D;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -166,6 +182,9 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #25262D;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
             
@@ -190,6 +209,9 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #25262D;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -204,6 +226,7 @@
             font-size: 16px;
             line-height: 20px;
             color: #25262D;
+            
         }
         
         .about__file {
