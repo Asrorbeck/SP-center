@@ -18,7 +18,10 @@
             border-radius: 8px;
             margin-bottom: 10px;
             box-shadow: 0px 20px 80px rgba(49, 49, 49, 0.1);
-            // margin-right: 50px;
+            margin-right: 50px;
+            &:nth-child(3n) , &:nth-child(10){
+                margin-right: 0;
+            }
             
             .project__item-top {
                 margin-bottom: 10px;
@@ -92,6 +95,17 @@
 @media only screen and  (max-width: 1275px) {
     .project__container {
         margin-right: 0;
+    }
+}
+
+
+@media only screen and  (max-width: 1000px){
+    .project__container {
+        .project__list{
+            .project__item{
+                margin-right: 0;
+            }
+        }
     }
 }
 

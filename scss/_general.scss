@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, body, html {
 }
 
 body {
-    background: #E5E5E5;
+    // background: rgb(239, 239, 239);
 }
 
 ul {
@@ -17,4 +17,8 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+main {
+    background-image: url('./../img/bg.png');
 }
