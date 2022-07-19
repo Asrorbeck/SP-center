@@ -287,36 +287,42 @@
 }
 
 .about__comment {
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
     background-color: #fff;
     border: 2px solid #d6d6d6;
+    margin-bottom: 20px;
     max-width: 810px;
     width: 100%;
-    display: flex;
-    position: relative;
-    margin-bottom: 20px;
-    
-    
-    .about__comment-img {
-        margin-left: 10px;
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    .about__comment-text {
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        margin-right: 10px;
-        padding: 10px;
-        background-color: #d0d0d0;
-        margin-bottom: 5px;
+    .about__main-wrapper-comment {
+        position: relative;
+        max-width: 810px;
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        
+        .about__comment-img {
+            margin-left: 10px;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .about__comment-text {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: #d0d0d0;
+            margin-bottom: 5px;
+        }
     }
 }
 
@@ -327,7 +333,7 @@
     border-top: 10px solid transparent;
     border-right: 15px solid #d0d0d0;
     border-bottom: 10px solid transparent;
-    top: calc(0% + 10px );
+    top: 0;
     right: calc(100% - 80px);
 }
 
@@ -342,6 +348,7 @@
 }
 
 .write__comment {
+    margin: 0;
     padding: 0;
     padding-left: 10px;
     padding-top: 10px;
@@ -423,8 +430,8 @@
         border-top: 10px solid transparent;
         border-right: 15px solid #d0d0d0;
         border-bottom: 10px solid transparent;
-        top: calc(0% + 10px );
-        right: calc(100% - 60px);
+        top: 0;
+        right: calc(100% - 80px);
     }
 }
 
