@@ -1,3 +1,10 @@
+.burger-close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /* roboto-regular - latin */
 @font-face {
   font-family: 'Roboto';
@@ -162,6 +169,21 @@ main {
 @media only screen and (max-width: 1275px) {
   .header__container {
     display: none;
+  }
+  .header__item-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 20px;
+  }
+  .header-toggle {
+    display: block;
   }
 }
 
