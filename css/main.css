@@ -157,7 +157,12 @@ main {
 }
 
 .header__container .header__item .header__item-link--active {
+  border-radius: 10px;
   background-color: #e6ffe5;
+}
+
+.burger-close {
+  display: none;
 }
 
 @media only screen and (max-width: 375px) {
@@ -167,6 +172,12 @@ main {
 }
 
 @media only screen and (max-width: 1275px) {
+  .header {
+    z-index: 1000;
+  }
+  .burger-close {
+    display: unset;
+  }
   .header__container {
     display: none;
   }
@@ -497,6 +508,11 @@ main {
 @media only screen and (max-width: 1275px) {
   .project__container {
     margin-right: 0;
+  }
+  .project__container .project__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

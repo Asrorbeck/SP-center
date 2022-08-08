@@ -96,6 +96,9 @@
 @media only screen and  (max-width: 1275px) {
     .project__container {
         margin-right: 0;
+        .project__list {
+            justify-content: center;
+        }
     }
 }
 
