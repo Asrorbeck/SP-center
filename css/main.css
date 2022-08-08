@@ -505,6 +505,64 @@ main {
           box-shadow: 0px 20px 80px rgba(49, 49, 49, 0.1);
 }
 
+.rating-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rating-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.rating li {
+  list-style-type: none;
+}
+
+.rating-item {
+  cursor: pointer;
+  font-size: 2em;
+  color: orange;
+}
+
+/* initial: make all stars full */
+.rating-item::before {
+  content: "\2605";
+}
+
+/* make until the clicked star (the rest) empty */
+.rating-item.active ~ .rating-item::before {
+  content: "\2606";
+}
+
+/* on hover make all full */
+.rating:hover .rating-item::before {
+  content: "\2605";
+}
+
+/* make until the hovered (the rest) empty */
+.rating-item:hover ~ .rating-item::before {
+  content: "\2606";
+}
+
 @media only screen and (max-width: 1275px) {
   .project__container {
     margin-right: 0;
